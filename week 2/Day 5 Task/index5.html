@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MyPortfolio</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeBtn" class="theme-btn">🌙 Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+                <h1>Hello, I'm <span>Sanket Lohar</span></h1>
+                <h3>Frontend Developer</h3>
+                <p>
+                    I create responsive websites using HTML,
+                    CSS and JavaScript.
+                </p>
+
+                <a href="#projects" class="btn">View My Projects</a>
+            </div>
+
+            <div class="hero-image">
+                <div class="avatar">👨‍💻</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p class="section-desc">
+                I am a passionate web development learner who
+                enjoys creating attractive and user-friendly websites.
+                I am learning frontend development and building
+                projects to improve my coding skills.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill-card">🌐 HTML</div>
+                <div class="skill-card">🎨 CSS</div>
+                <div class="skill-card">⚡ JavaScript</div>
+                <div class="skill-card">📱 Responsive Design</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <p class="section-desc">
+                Here are some projects I have created while learning.
+            </p>
+
+            <div class="projects-container">
+                <article class="project-card">
+                    <div class="project-icon">💼</div>
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A personal website to showcase my skills,
+                        introduction and projects.
+                    </p>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">👥</div>
+                    <h3>Random User Directory</h3>
+                    <p>
+                        A webpage that fetches random user profiles
+                        using the JavaScript Fetch API.
+                    </p>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">API</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">📝</div>
+                    <h3>To-Do List</h3>
+                    <p>
+                        A task management application to add and
+                        manage daily tasks.
+                    </p>
+                    <span class="tag">HTML</span>
+                    <span class="tag">JavaScript</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <p class="section-desc">
+                Have a project idea? Send me a message!
+            </p>
+
+            <form id="contactForm">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Write your message"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <p id="formStatus" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> My Portfolio | Made with ❤️</p>
+    </footer>
+
+    <script src="scriptday5.js"></script>
+</body>
+</html>

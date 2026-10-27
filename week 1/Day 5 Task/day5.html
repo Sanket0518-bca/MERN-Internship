@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Interactive Tasks</title>
+
+    <link rel="stylesheet" href="styleday5.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1>JavaScript Interactive Tasks</h1>
+
+        <p>
+            MERN Full Stack Internship Program - Day 5
+        </p>
+
+        <!-- Theme Buttons -->
+
+        <div class="theme-buttons">
+            <button id="lightBtn">☀️ Light</button>
+            <button id="darkBtn">🌙 Dark</button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ================================================= -->
+        <!-- TASK 1 - INTERACTIVE BUTTONS -->
+        <!-- ================================================= -->
+
+        <section class="card">
+
+            <h2>Task 1 - Interactive Buttons</h2>
+
+            <p id="demoText">
+                Hello! This is JavaScript DOM manipulation.
+            </p>
+
+
+            <!-- Text Color -->
+
+            <h3>1. Change Text Color</h3>
+
+            <div class="button-group">
+
+                <button id="redBtn">
+                    RED
+                </button>
+
+                <button id="greenBtn">
+                    GREEN
+                </button>
+
+                <button id="blueBtn">
+                    BLUE
+                </button>
+
+            </div>
+
+
+            <!-- Font Family -->
+
+            <h3>2. Change Font Family</h3>
+
+            <select id="fontSelect">
+
+                <option value="Arial">
+                    Arial
+                </option>
+
+                <option value="Georgia">
+                    Georgia
+                </option>
+
+                <option value="Courier New">
+                    Courier New
+                </option>
+
+                <option value="Verdana">
+                    Verdana
+                </option>
+
+                <option value="Times New Roman">
+                    Times New Roman
+                </option>
+
+            </select>
+
+
+            <!-- Font Size -->
+
+            <h3>3. Change Font Size</h3>
+
+            <div class="button-group">
+
+                <button id="increaseBtn">
+                    A+
+                </button>
+
+                <button id="decreaseBtn">
+                    A-
+                </button>
+
+            </div>
+
+
+            <!-- Font Style -->
+
+            <h3>4. Font Style</h3>
+
+            <p id="styleText">
+                Move your mouse over this text.
+            </p>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- TASK 2 - SIMPLE FORM VALIDATION -->
+        <!-- ================================================= -->
+
+        <section class="card">
+
+            <h2>Task 2 - Simple Form Validation</h2>
+
+            <form id="myForm">
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <small id="nameError"></small>
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <small id="emailError"></small>
+
+
+                <label for="mobile">
+                    Mobile
+                </label>
+
+                <input
+                    type="text"
+                    id="mobile"
+                    placeholder="Enter mobile number"
+                >
+
+                <small id="mobileError"></small>
+
+
+                <button type="submit" class="submit-btn">
+                    Submit
+                </button>
+
+            </form>
+
+            <p id="successMessage"></p>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- TASK 3 - SIMPLE CALCULATOR -->
+        <!-- ================================================= -->
+
+        <section class="card">
+
+            <h2>Task 3 - Simple Calculator</h2>
+
+            <input
+                type="number"
+                id="num1"
+                placeholder="Enter first number"
+            >
+
+            <input
+                type="number"
+                id="num2"
+                placeholder="Enter second number"
+            >
+
+
+            <div class="calculator-buttons">
+
+                <button id="addBtn">
+                    Add +
+                </button>
+
+                <button id="subtractBtn">
+                    Subtract -
+                </button>
+
+                <button id="multiplyBtn">
+                    Multiply ×
+                </button>
+
+                <button id="divideBtn">
+                    Divide ÷
+                </button>
+
+            </div>
+
+
+            <div id="calculatorResult">
+                Result will appear here
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- BONUS CHALLENGE -->
+        <!-- ================================================= -->
+
+        <section class="card">
+
+            <h2>Bonus Challenge</h2>
+
+            <p>
+                Switch between Light and Dark Mode.
+            </p>
+
+            <div class="theme-buttons">
+
+                <button id="lightBtn2">
+                    ☀️ Light
+                </button>
+
+                <button id="darkBtn2">
+                    🌙 Dark
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            JavaScript DOM Practice | MERN Full Stack Internship
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="scriptday5.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #333;
+}
+
+.container {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 20px;
+  border: 1px solid #e1e5ed;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #2563eb;
+}
+
+.counter-card {
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.counter-btn {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.counter-btn:hover {
+  background: #1748b5;
+  transform: scale(1.06);
+}
+
+.counter-btn:active {
+  transform: scale(0.94);
+}
+
+.count {
+  min-width: 35px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccd2df;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+.preview {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f5ff;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.preview h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.preview p {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 15px auto;
+    padding: 12px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}

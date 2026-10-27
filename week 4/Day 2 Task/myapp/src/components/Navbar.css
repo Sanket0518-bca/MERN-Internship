@@ -1,0 +1,59 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 18px 7%;
+  background: #172554;
+  color: white;
+  box-shadow: 0 3px 12px #0002;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.brand span {
+  color: #60a5fa;
+  margin-left: 5px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.current-theme {
+  font-size: 14px;
+}
+
+.theme-button {
+  background: #fbbf24;
+  color: #172554;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.theme-button:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .nav-right {
+    align-items: flex-start;
+  }
+}

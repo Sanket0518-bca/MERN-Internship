@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f4f6;
+    color: #374151;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    text-align: center;
+    max-width: 760px;
+    margin: 35px auto 25px;
+    padding: 15px 22px;
+}
+
+.badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #3157a4;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hero h1 {
+    color: #374151;
+    font-size: clamp(27px, 5vw, 40px);
+    margin: 12px 0 5px;
+}
+
+.hero p {
+    color: #6b7280;
+    margin: 8px 0 18px;
+}
+
+button {
+    background: #1765d1;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #104fa8;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.run-status {
+    font-size: 13px;
+}
+
+main {
+    width: 92%;
+    max-width: 760px;
+    margin: 0 auto 35px;
+}
+
+.task-card {
+    background: white;
+    padding: 24px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.task-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.task-heading h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0;
+    color: #374151;
+}
+
+.task-badge {
+    display: inline-block;
+    flex-shrink: 0;
+    background: #dbeafe;
+    color: #2456a4;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.mini-badge {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.task-card > p {
+    color: #6b7280;
+    margin: 12px 0;
+}
+
+code {
+    background: #f3f4f6;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #3157a4;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    padding: 13px 15px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    margin: 16px 0;
+}
+
+.result-box {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 18px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 5px 0;
+}
+
+.result-row span,
+.result-box > span {
+    color: #6b7280;
+}
+
+.result-row strong,
+.result-box strong {
+    overflow-wrap: anywhere;
+}
+
+.success {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+
+.posts-list {
+    display: grid;
+    gap: 10px;
+}
+
+.post-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+    padding: 12px;
+}
+
+.post-number {
+    color: #2563eb;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.post-item p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.weather-result {
+    background: #eff6ff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.weather-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.weather-item span {
+    display: block;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.weather-item strong {
+    font-size: 19px;
+    color: #1d4ed8;
+}
+
+.error {
+    color: #b91c1c;
+    background: #fee2e2;
+    border-radius: 8px;
+    padding: 12px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    background: #e5e7eb;
+    color: #6b7280;
+    padding: 18px;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        margin-top: 20px;
+    }
+
+    .task-card {
+        padding: 17px;
+    }
+
+    .task-heading h2 {
+        font-size: 19px;
+    }
+
+    .task-heading {
+        gap: 9px;
+    }
+
+    .result-row {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .weather-grid {
+        grid-template-columns: 1fr;
+    }
+}

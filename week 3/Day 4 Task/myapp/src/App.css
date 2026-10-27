@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #263247;
+}
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 25px 18px;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.section h2 {
+  color: #2563eb;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.section-description {
+  color: #667085;
+  margin-bottom: 20px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.user-card,
+.post-card {
+  background: white;
+  border: 1px solid #e1e5ed;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+  overflow-wrap: anywhere;
+}
+
+.user-card {
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7efff;
+  color: #2563eb;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-card h3 {
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+.user-card p,
+.post-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #596579;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.post-number {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #e7efff;
+  color: #2563eb;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.post-card h3 {
+  font-size: 17px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 18px;
+  border: 1px solid #e1e5ed;
+  border-radius: 10px;
+}
+
+.status p {
+  color: #596579;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #dbe5ff;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  padding: 14px;
+  background: #fff0f0;
+  color: #c62828;
+  border: 1px solid #ffcaca;
+  border-radius: 8px;
+}
+
+.footer {
+  padding: 18px;
+  text-align: center;
+  background: #e8edf5;
+  color: #596579;
+  font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .user-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 18px 12px;
+  }
+}

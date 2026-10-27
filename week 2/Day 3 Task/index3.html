@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 - Asynchronous JavaScript</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="scriptday3.js" defer></script>
+</head>
+<body>
+
+    <header class="hero">
+        <span class="badge">Week 2 · Day 3</span>
+        <h1>Asynchronous JavaScript</h1>
+        <p>Exploring <code>setTimeout</code>, <code>Promises</code>, and <code>async/await</code> with real APIs</p>
+        <button id="runButton">Run Tasks in Console</button>
+        <p id="runStatus" class="run-status">Ready to run all tasks.</p>
+    </header>
+
+    <main>
+        <section class="task-card">
+            <div class="task-heading">
+                <span class="task-badge">Task 1</span>
+                <h2>Simulate API Call with setTimeout</h2>
+            </div>
+            <p>Simulate an API call delay of 2 seconds using <code>setTimeout()</code> and a nested timeout for data processing.</p>
+            <pre>fakeAPICall(); // 2000ms delay → "User data received"</pre>
+
+            <div class="result-box">
+                <div class="result-row">
+                    <span>Step 1 (API Call):</span>
+                    <strong id="apiStatus">Waiting...</strong>
+                </div>
+                <div class="result-row">
+                    <span>Step 2 (Nested Extension):</span>
+                    <strong id="processingStatus">Waiting...</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="task-card">
+            <div class="task-heading">
+                <span class="task-badge">Task 2</span>
+                <h2>Promise Example (.then / .catch)</h2>
+            </div>
+            <p>Using a Promise to handle online success (<code>resolve</code>) and network error (<code>reject</code>).</p>
+            <pre>simulateFetch.then(msg => console.log(msg)).catch(err => console.error(err));</pre>
+
+            <div class="result-box">
+                <span>Promise Result:</span>
+                <strong id="promiseResult" class="success">Waiting for Promise...</strong>
+            </div>
+        </section>
+
+        <section class="task-card">
+            <div class="task-heading">
+                <span class="task-badge">Task 3</span>
+                <h2>Async/Await with Fetch</h2>
+            </div>
+            <p>Fetch 5 posts from JSONPlaceholder using modern <code>async/await</code> and <code>try...catch</code>.</p>
+            <pre>fetch("https://jsonplaceholder.typicode.com/posts?_limit=5")</pre>
+            <div id="postsResult" class="posts-list">
+                Posts will appear here when you run the tasks.
+            </div>
+        </section>
+
+        <section class="task-card">
+            <div class="task-heading">
+                <span class="task-badge mini-badge">Mini Challenge</span>
+                <h2>Weather Fetcher (Open-Meteo API)</h2>
+            </div>
+            <p>Fetch live weather for New Delhi (28.61° N, 77.23° E), displaying temperature and wind speed, with error handling.</p>
+            <pre>fetch("https://api.open-meteo.com/v1/forecast")</pre>
+            <div id="weatherResult" class="weather-result">
+                Weather data will appear here when you run the tasks.
+            </div>
+        </section>
+    </main>
+
+    <footer>Week 2 · Day 3 — JavaScript Practice</footer>
+
+</body>
+</html>

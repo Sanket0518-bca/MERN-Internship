@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Directory</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Random User Directory</h1>
+        <p>Discover people from around the world</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Task 1: Single Random User -->
+        <section class="featured-section">
+            <h2>Task 1: Random User</h2>
+
+            <div id="singleUser" class="single-user">
+                <p>Click the button to load a random user.</p>
+            </div>
+
+            <button id="newUserBtn">Get New User</button>
+        </section>
+
+        <!-- Task 2 and Mini Challenge -->
+        <section class="directory-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Task 2: User Directory</h2>
+                    <p>Meet people from around the world</p>
+                </div>
+
+                <button id="refreshBtn">Refresh Users</button>
+            </div>
+
+            <div id="userGrid" class="user-grid">
+                <p>Loading users...</p>
+            </div>
+
+            <p id="status" class="status" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Built with HTML, CSS and JavaScript Fetch API</p>
+    </footer>
+
+    <script src="scriptday4.js"></script>
+</body>
+</html>

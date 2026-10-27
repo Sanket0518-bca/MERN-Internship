@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherNow - Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+
+        <header class="app-header">
+            <div class="brand">
+                <span class="brand-icon">🌤️</span>
+                <h1>WeatherNow</h1>
+            </div>
+
+            <p>Discover the weather in your city</p>
+        </header>
+
+        <section class="search-section">
+            <form id="weatherForm">
+                <label for="cityInput">Enter City Name</label>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="cityInput"
+                        placeholder="e.g. Indore, Delhi, Mumbai"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit" id="searchBtn">
+                        Search
+                    </button>
+                </div>
+            </form>
+
+            <p class="search-hint">
+                Enter a city to see its current weather.
+            </p>
+        </section>
+
+        <div id="message" class="message" role="status"
+             aria-live="polite" hidden></div>
+
+        <section id="weatherResult" class="weather-result" hidden>
+            <div class="weather-top">
+                <div>
+                    <p class="eyebrow">CURRENT WEATHER</p>
+                    <h2 id="cityName">City Name</h2>
+                    <p id="weatherDate" class="weather-date"></p>
+                </div>
+
+                <img id="weatherIcon" src="" alt="Weather icon">
+            </div>
+
+            <div class="temperature-row">
+                <h3 id="temperature">--°C</h3>
+
+                <div>
+                    <p id="weatherCondition" class="condition">
+                        Weather condition
+                    </p>
+                    <p id="feelsLike" class="feels-like">
+                        Feels like --°C
+                    </p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <article class="detail-card">
+                    <span class="detail-icon">💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </article>
+
+                <article class="detail-card">
+                    <span class="detail-icon">💨</span>
+                    <p>Wind Speed</p>
+                    <h3 id="windSpeed">-- m/s</h3>
+                </article>
+
+                <article class="detail-card">
+                    <span class="detail-icon">🌡️</span>
+                    <p>Pressure</p>
+                    <h3 id="pressure">-- hPa</h3>
+                </article>
+            </div>
+
+            <p class="updated-note">
+                Live data from OpenWeatherMap
+            </p>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+            <p>Weather data: OpenWeatherMap API</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
